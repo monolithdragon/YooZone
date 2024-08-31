@@ -120,25 +120,20 @@ namespace UnityX {
         /// <summary>
         /// Represents a node in the state machine, holding a state and its associated transitions.
         /// </summary>
-        private class StateNode {
+        /// <remarks>
+        /// Initializes a new instance of the StateNode class with the specified state.
+        /// </remarks>
+        /// <param name="state">The state associated with this node.</param>
+        private class StateNode(IState state) {
             /// <summary>
             /// Gets the state associated with this node.
             /// </summary>
-            public IState State { get; }
+            public IState State { get; } = state;
 
             /// <summary>
             /// Gets the set of transitions originating from this state.
             /// </summary>
-            public HashSet<ITransition> Transitions { get; }
-
-            /// <summary>
-            /// Initializes a new instance of the StateNode class with the specified state.
-            /// </summary>
-            /// <param name="state">The state associated with this node.</param>
-            public StateNode(IState state) {
-                State = state;
-                Transitions = [];
-            }
+            public HashSet<ITransition> Transitions { get; } = [];
 
             /// <summary>
             /// Adds a transition from this state to another state with a specified condition.

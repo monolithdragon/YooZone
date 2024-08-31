@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
 
 namespace UnityX {
-    public abstract class State<T> : IState {
-        protected readonly T controller;
-        protected readonly Animator animator;
+    public abstract class State<T>(T controller, Animator animator) : IState {
+        protected readonly T controller = controller;
+        protected readonly Animator animator = animator;
 
-        protected State(T controller, Animator animator) {
-            this.controller = controller;
-            this.animator = animator;
-        }
+        protected const float crossFadeDuration = 0.1f;
 
         public virtual void OnEnter() { }
         public virtual void Update() { }
