@@ -1,4 +1,4 @@
-﻿namespace UnityX {
+﻿namespace UnityX.StateMachine {
     /// <summary>
     /// This interface represents a transition between states in a state machine.
     /// It defines properties for the target state and the condition that must be met

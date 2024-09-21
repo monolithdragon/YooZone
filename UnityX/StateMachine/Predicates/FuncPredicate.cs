@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnityX {
+namespace UnityX.StateMachine {
     public class FuncPredicate(Func<bool> predicate) : IPredicate {
         private readonly Func<bool> predicate = predicate;
 

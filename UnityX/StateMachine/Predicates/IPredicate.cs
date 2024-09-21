@@ -1,4 +1,4 @@
-﻿namespace UnityX {
+﻿namespace UnityX.StateMachine {
     /// <summary>
     /// This interface defines a contract for evaluating a condition. 
     /// It contains a single method, Evaluate, which returns a boolean value indicating 

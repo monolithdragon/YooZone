@@ -1,4 +1,4 @@
-﻿namespace UnityX {
+﻿namespace UnityX.StateMachine {
     /// <summary>
     /// This interface defines a structure for managing different states in a state machine.
     /// It provides four methods to handle the lifecycle of a state, including initialization,

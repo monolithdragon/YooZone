@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityX {
+namespace UnityX.StateMachine {
     public abstract class State<T>(T controller, Animator animator) : IState {
         protected readonly T controller = controller;
         protected readonly Animator animator = animator;

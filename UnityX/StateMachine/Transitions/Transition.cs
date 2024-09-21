@@ -1,4 +1,4 @@
-﻿namespace UnityX {
+﻿namespace UnityX.StateMachine {
     /// <summary>
     /// This class implements the <see cref="ITransition"/> interface, representing a transition
     /// between two states in a state machine. It holds the target state and the condition

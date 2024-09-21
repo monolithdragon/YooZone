@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UnityX {
+namespace UnityX.StateMachine {
     /// <summary>
     /// This class manages states and transitions in a state machine.
     /// It handles state updates, transitions between states, and allows the addition
