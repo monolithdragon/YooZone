@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityXTest", "UnityXTest\Un
 		{3CAC60B6-D875-4566-A0B9-9512BCC012C1} = {3CAC60B6-D875-4566-A0B9-9512BCC012C1}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YooZone", "YooZone\YooZone.csproj", "{7FF67ABA-274F-4589-A857-BC0EEC779AEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{4CBEADDD-AF25-4211-993F-DC37870195C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CBEADDD-AF25-4211-993F-DC37870195C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CBEADDD-AF25-4211-993F-DC37870195C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF67ABA-274F-4589-A857-BC0EEC779AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF67ABA-274F-4589-A857-BC0EEC779AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF67ABA-274F-4589-A857-BC0EEC779AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF67ABA-274F-4589-A857-BC0EEC779AEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
