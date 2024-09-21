@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityX", "UnityX\UnityX.csproj", "{3CAC60B6-D875-4566-A0B9-9512BCC012C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityX", "UnityX\UnityX.csproj", "{3CAC60B6-D875-4566-A0B9-9512BCC012C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityXTest", "UnityXTest\UnityXTest.csproj", "{4CBEADDD-AF25-4211-993F-DC37870195C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityXTest", "UnityXTest\UnityXTest.csproj", "{4CBEADDD-AF25-4211-993F-DC37870195C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CAC60B6-D875-4566-A0B9-9512BCC012C1} = {3CAC60B6-D875-4566-A0B9-9512BCC012C1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
