@@ -72,9 +72,7 @@ namespace UnityX.StateMachine {
         /// <param name="state">The state for which the corresponding <see cref="StateNode"/> is required.</param>
         /// <returns>The <see cref="StateNode"/> corresponding to the specified state.</returns>
         private StateNode GetOrAddNode(IState state) {
-            var node = nodes.GetValueOrDefault(state.GetType());
-
-            if (node == null) {
+            if (!nodes.TryGetValue(state.GetType(), out var node)) {
                 node = new StateNode(state);
                 nodes.Add(state.GetType(), node);
             }
