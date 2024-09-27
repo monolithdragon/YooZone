@@ -1,5 +1,5 @@
 ﻿namespace UnityX.SpawnSystem {
-    public class EntitySpawner<T> {
+    public class EntitySpawner<T> where T : IEntity {
         private readonly IEntityFactory<T> _entityFactory;
         private readonly ISpawnPointStrategy _spawnPointStrategy;
 
