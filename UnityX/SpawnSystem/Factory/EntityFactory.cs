@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 
 namespace UnityX.SpawnSystem {
-    public class EntityFactory<T> : IEntityFactory<T> {
-        private readonly GameObject _prefab;
+    public class EntityFactory<T> : IEntityFactory<T> where T : IEntity {
+        private readonly EntityData[] _data;
 
-        public EntityFactory(GameObject prefab) => _prefab = prefab;
+        public EntityFactory(EntityData[] data) => _data = data;
 
         public T Create(Transform spawnPoint) {
-            var entity = GameObject.Instantiate(_prefab, spawnPoint.position, Quaternion.identity);
+            var entityData = _data[Random.Range(0, _data.Length)];
+            var entity = GameObject.Instantiate(entityData.prefab, spawnPoint.position, Quaternion.identity);
             return entity.GetComponent<T>();
         }
     }
