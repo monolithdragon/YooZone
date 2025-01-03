@@ -121,13 +121,14 @@ namespace UnityX.Timer {
         /// </summary>
         /// <param name="disposing">Indicates if managed resources should be disposed.</param>
         protected virtual void Dispose(bool disposing) {
-            if (!_disposedValue) {
-                if (disposing) {
-                    TimerManager.RemoveTimer(this);
-                }
+            if (_disposedValue)
+                return;
 
-                _disposedValue = true;
+            if (disposing) {
+                TimerManager.RemoveTimer(this);
             }
+
+            _disposedValue = true;
         }
 
         /// <summary>
