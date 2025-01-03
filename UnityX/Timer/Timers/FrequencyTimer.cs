@@ -55,7 +55,7 @@ namespace UnityX.Timer {
         /// Calculates the time threshold for each tick based on the number of ticks per second.
         /// </summary>
         /// <param name="ticksPerSecond">Number of ticks per second.</param>
-        void CalculateTimeThreshold(int ticksPerSecond) {
+        private void CalculateTimeThreshold(int ticksPerSecond) {
             TicksPerSecond = ticksPerSecond;
             timeThreshold = 1f / TicksPerSecond;
         }
