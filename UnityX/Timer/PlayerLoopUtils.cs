@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using UnityEngine;
-using UnityEngine.LowLevel;
 
-namespace UnityX.Timer {
+namespace UnityEngine.LowLevel {
     /// <summary>
     /// Utility class for managing PlayerLoopSystem operations, such as inserting, 
     /// removing, and printing systems in the Unity player loop.
